@@ -1,0 +1,36 @@
+<html>
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="Manicure.ico" type="image/x-icon" />
+<title>
+Trattamenti per il Viso
+</title>
+</head>
+<body vlink="gold" alink="gold" link="gold">
+<table>
+<tr>
+<header>
+<h1>Salone di Bellezza
+<br>Posso farmi i capelli</br></h1>
+</header>
+<input value="Home" type="button" onClick="window.close()" style="float:left;color:gold;font-size:23px;font-family:monotype corsiva;background-color:Black;margin-top:50px" />
+<div align="center">
+<p style="font-size:35px">Prenota una sessione di Trattamento viso</p>
+<p>Numero di Telefono</p>
+<input id="email" type="text" />
+<p>Scrivi il tuo messaggio</p>
+<textarea id="Body" rows="10" cols="30"></textarea> <br/>
+<input type="button" onClick="Email()" value="Manda la Richiesta" style="color:gold;font-size:23px;font-family:monotype corsiva;background-color:Black;margin-top:50px"/>
+</div>
+</tr>
+</table>
+</body>
+</html>
+<script>
+function Email()
+{
+var email=document.getElementById("email").value;
+var messaggio=document.getElementById("Body").value;
+location.href = "mailto:lorena.ierfino@studenti.liceozaleuco.it?Subject=Trattamenti%20per%20il%20Viso&Body=" + "+39" + email + ";  " + messaggio;
+}
+</script>
